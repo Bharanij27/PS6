@@ -12,7 +12,11 @@
     width: 100vw;
     height: max-content;
     background: #0D186F;
-    background: radial-gradient(at center top, #0D186F, #010101);
+    background-image: url('./assets/mainbg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 20rem 20rem 20rem 20rem rgba(0,0,0,0.45) inset;
 
     .ps6-header {
         display: flex;
@@ -45,7 +49,7 @@
                 width: 9.5rem;
                 font-weight: 400;
                 text-transform: uppercase;
-                font-size: 1.125rem;
+                font-size: 1.25rem;
                 cursor: pointer;
             }
         }
@@ -136,6 +140,7 @@
 
 .ps6-addon {
     background-color: #060814;
+    box-shadow: 0rem 0rem 1rem 0.5rem rgba(6, 8, 20, 0.5);
 }
 
 .page-black-box-shadow {
