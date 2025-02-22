@@ -1,0 +1,71 @@
+.features-wrapper {
+    padding-bottom: 5rem;
+
+    .feature-header-style {
+        cursor: pointer;
+    }
+
+    .feature-body {
+        height: max-content;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        position: relative;
+        display: flex;
+        overflow-x: clip;
+
+        .feature-bar-wrapper {
+            display: flex;
+            width: 65%;
+            flex-direction: column;
+            padding-left: 0.5rem;
+        }
+
+        .feature-description-wrapper {
+            position: relative;
+
+            .feature-description {
+                position: absolute;
+                top: 8rem;
+                left: -13rem;
+                width: 28rem;
+            }
+
+            .feature-heading {
+                font-weight: 600;
+                font-size: 2.5rem;
+                font-family: 'Bayon', sans-serif;
+                /* font-family: "Geist", serif; */
+                padding-bottom: 1rem;
+            }
+
+            .about-feature {
+                padding-bottom: 2rem;
+                word-spacing: 0.5rem;
+                height: 9rem;
+                font-size: 1.25rem;
+            }
+
+            .earbud {
+                position: relative;
+                top: 1rem;
+                left: 12rem;
+
+                img {
+                    width: 14rem;
+                }
+            }
+        }
+
+        .water-drop {
+            position: absolute;
+            right: 1rem;
+            bottom: 0rem;
+            transform: scale(1.5);
+
+            img {
+                border-radius: 2.5rem;
+                height: 22rem;
+            }
+        }
+    }
+}

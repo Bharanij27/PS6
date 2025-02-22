@@ -1,0 +1,26 @@
+.controller-wrapper {
+    padding-bottom: 5rem;
+    margin-top: -1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 12rem;
+
+    .accessories-card-container {
+        display: flex;
+        padding-top: 5rem;
+
+        .center {
+            transform: scale(1.3);
+            box-shadow: 0px 0px 0.375rem 0.35rem rgba(48,64,184,0.75);
+            border-radius: 0rem;
+            z-index: 2;
+        }
+
+    }
+    .accessories-card-container:hover .center:not(:hover) {
+            transform: scale(1);
+            box-shadow: 0px 0px 0.375rem 0.35rem rgba(48,64,184,0.75);
+            border-radius: 0rem;
+    }
+}

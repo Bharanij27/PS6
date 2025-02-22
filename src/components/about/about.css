@@ -1,0 +1,114 @@
+.about-container {
+
+    padding-left: 7rem;
+    padding-right: 9rem;
+    padding-bottom: 3rem;
+
+    .about-ps-title {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        font-weight: 500;
+        /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+        font-family: 'Bayon', sans-serif;
+        font-size: 3rem;
+        padding-top: 3rem;
+        color: white;
+
+        img {
+            width: 3rem;
+            height: 3rem;
+            padding-right: 0.75rem;
+        }
+    }
+
+    .divider {
+        height: 0.07rem;
+        background-color: white;
+        margin: 0.5rem 0 1.5rem 0;
+        width: 100%;
+    }
+
+    .about-body {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+
+        .about-body-title {
+            font-size: 1.35rem;
+            font-weight: 400;
+            padding-bottom: 1.5rem;
+        }
+        .content-wrapper {
+
+            .about-body-content, .about-body-content a {
+                color: white;
+                font-weight: 200;
+                padding-bottom: 0.25rem;
+            }
+
+            .social_icons {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+        }
+    }
+
+    .about-sony {
+        .sony {
+            margin-bottom: 2.5rem;
+
+            .title {
+                font-weight: bold;
+                /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+                font-size: 1.75rem;
+                color: white;
+                text-transform: uppercase;
+                margin-bottom: 1rem;
+            }
+
+            .content {
+                font-weight: 300;
+                font-size: 1rem;
+                margin-bottom: 0.75rem;
+            }
+        }
+    }
+
+    .global {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1rem;
+
+        .country {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 1rem;
+                height: 1rem;
+                padding-right: 0.5rem;
+            }
+        }
+
+        .terms {
+            display: flex;
+            .term {
+                display: flex;
+                padding-right: 0.5rem;
+                align-items: center;
+
+                .term-content {
+                    margin-right: 0.25rem;
+                }
+
+                .term-divider {
+                    height: 75%;
+                    background-color: white;
+                    margin: 0rem 0rem 0rem 0.25rem;
+                    width: 0.05rem;
+                }
+            }
+        }
+    }
+}

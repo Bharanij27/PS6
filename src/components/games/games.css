@@ -1,0 +1,153 @@
+.games-section-wrapper {
+    display: flex;
+    height: 45rem;
+    position: relative;
+    padding-top: 6rem;
+    margin-top: 5rem;
+    overflow: clip;
+
+    &::before {
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 2%, rgba(239, 233, 233, 0) 5%)
+    }
+
+    &::after {
+        background: linear-gradient(to left, rgb(0, 0, 0) 2%, rgba(239, 233, 233, 0) 10%)
+    }
+
+    .game-image {
+        display: inline-flex;
+        border-radius: 1rem;
+
+        &.first-image {
+            position: absolute;
+            top: 0rem;
+
+            img {
+                object-fit: cover;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 2rem;
+        }
+        
+        &.last-image {
+            position: absolute;
+            height: 40rem;
+            width: 40rem;
+            right: 1.5rem;
+            bottom: -1rem;
+
+            img {
+                object-fit: contain;
+            }
+        }
+    }
+
+    .content-wrapper {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .content {
+            width: 45%;
+            position: absolute;
+            left: 15rem;
+            top: 7rem;
+            padding: 3rem;
+        }
+    }
+
+    .game-body-wrapper {
+
+        .game-body-title {
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 2.5rem;
+            font-family: 'Bayon', sans-serif;
+            /* font-family: "Geist", serif; */
+            padding-bottom: 1rem;
+        }
+
+        .game-description {
+            width: 60%;
+            font-size: 1.25rem;
+        }
+
+        .games-list-wrapper {
+            width: 100%;
+            display: flex;
+            margin-top: 4rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+
+            .game {
+                padding-right: 4rem;
+                margin-bottom: 2rem;
+                flex: 0.2;
+
+                img {
+                    width: 7rem;
+                    height: 7rem;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    transition: box-shadow 0.15s ease-in-out;
+                    cursor: pointer;
+                    
+                    &:hover {
+                        box-shadow: 0 0 0.825rem 0.4rem rgba(255, 255, 255, 0.6)
+                    }
+
+                }
+
+            }
+        }
+
+        .game-purchase-button {
+            .ps6-button button {
+                width: 18rem !important;
+                height: 3.5rem !important;
+                font-size: 1.175rem !important;
+
+
+                &:hover {
+            
+                    .button-content{
+                        .on-hover {
+                            width: 1.75rem !important;
+                            height: 1.75rem !important;
+                        }
+                    }
+                }
+
+                .button-content {
+            
+                    img {
+                        width: 1.5rem !important;
+                        height: 1.5rem !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .game-title-wrapper {
+        position: absolute;
+        right: 0rem;
+        bottom: 1.8rem;
+        font-weight: bolder;
+        background-color: rgba(0, 0, 0, 0.55);
+        padding-left: 4rem;
+        padding-right: 5rem;
+        text-transform: uppercase;
+        height: 3.75rem;
+        align-items: center;
+        font-family: "Bayon";
+        font-size: 1.75rem;
+        display: flex;
+        z-index: 100;
+    }
+}

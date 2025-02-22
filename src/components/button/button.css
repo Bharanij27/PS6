@@ -1,0 +1,54 @@
+.ps6-button button {
+    border: 0.060rem solid;
+    text-transform: uppercase;
+    width: max-content;
+    padding: 0rem 2rem;
+    border-radius: 0%;
+    transition: 0.75s;
+    height: 2.75rem;
+    font-size: 0.9rem;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        border: 0.05rem solid black;
+        border-color: black;
+        background-color: white;
+        color: black;
+        font-weight: 600;
+
+        .button-content{
+            transform: scale(1);
+            .main {
+                display: none;
+            }
+            .on-hover {
+                /* width: 1.25rem; */
+                /* height: 1.25rem; */
+                display: block;
+            }
+        }
+    }
+
+    .button-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        img {
+            width: 1.2rem;
+            height: 1.2rem;
+            padding-left: 0.5rem;
+        }
+        
+        .main {
+            display: inline;
+        }
+        .on-hover {
+            display: none;
+        }
+    }
+}
