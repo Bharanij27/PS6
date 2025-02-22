@@ -96,7 +96,7 @@
 
                 .main-title {
                     font-family: 'Bayon', sans-serif;
-                    font-size: 4.25rem;
+                    font-size: 4rem;
                 }
 
                 .description {
@@ -124,9 +124,10 @@
             width: 35%;
             margin-top: -6rem;
             margin-bottom: 4rem;
+            margin-right: 3rem;
 
             img {
-                width: 110%;
+                width: 135%;
                 height: 100%;
             }
         }
