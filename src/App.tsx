@@ -6,6 +6,7 @@ import Features from './components/features/features.component';
 import About from './components/about/about.component';
 import Games from './components/games/games.component';
 
+import PS6Game from './assets/ps6.png'
 import payBlack from './assets/button/pay-black.png';
 import payWhite from './assets/button/pay-white.png';
 import glassesBlack from './assets/button/glasses-black.png';
@@ -74,7 +75,7 @@ function App() {
             </div>
 
             <div className="ps-main-logo">
-              <img src="src/assets/ps6.png" alt="ps6" />
+              <img src={PS6Game} alt="ps6" />
             </div>
 
           </div>
